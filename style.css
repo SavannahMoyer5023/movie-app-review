@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+*{
+   box-sizing: border-box;
+ }
+
+ :root{
+    --primary-color:#ff0022d0;
+    --secondary-colory:#3468acad;
+ }
+
+ body{
+    background-color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+ }
+
+ header{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+    background-color: var(--secondary-colory);
+ }
+
+.search{
+    padding: 10px 15px;
+    border: 2px solid var(--primary-color);
+    border-radius:  50px;
+    background-color: var(--secondary-colory);
+    color: #eaf2f3;
+    font-family: inherit;
+    font-size: 1rem;
+} 
+
+.search::placeholder{
+    color: #3eac34ad;
+}
+
+.search:active{
+    background-color: var(--secondary-colory);
+    transition: background-color 0.3s ease-in;
+    outline: 3px solid rgba(191, 233, 95, 0.5); /* 使用半透明的 primary-color */
+    outline-offset: 2px;
+}
+
+main{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.movie{
+   position: absolute;
+   width: 300px;
+   border-radius: 10px;
+   margin: 1rem;
+   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+   overflow: hidden;
+   background-color: fuchsia;
+}
+
+.movie-img{
+   width: 100%;
+}
+
+.movie-info{
+
+}
