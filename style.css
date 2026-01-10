@@ -63,5 +63,51 @@ main{
 }
 
 .movie-info{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   padding: 0.5rem 1rem;
+   letter-spacing: 0.5px;
+   gap: 3rem;
+   color: #eaf2f3;
+}
 
+.movie-info h3{
+   margin: 0;
+}
+
+.movie-info span{
+   padding: 0.5rem;
+   background-color: #eaf2f3;
+   font-weight: bold;
+   border-radius: 5%;
+}
+
+.movie-info span.green {
+  color: lightgreen;
+}
+
+.movie-info span.orange {
+  color: orange;
+}
+
+.movie-info span.red {
+  color: red;
+}
+
+.overview{
+   background-color: #fff;
+   position:absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   padding: 0.3rem 0.6rem;
+   max-height: 100%;
+   transform: translateY(101%);
+   overflow-y: auto;
+   transition: transform 1s ease-in;
+}
+
+.movie-info:hover ~ .overview{
+   transform: translateY(0%);
 }
